@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<!-- 
+Thermostat
+by Devon Blandin, May 2012
+for IT 238, SQ2012
+-->
+<head>
+	<meta charset="utf-8">
+	<!--<meta http-equiv="refresh" content="3" />-->
+	<title>Thermostat</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="fallback/jquery-1.7.1.min.js"><\/script>')</script>
+	<script src="dist/all.js"></script>
+	<link rel="stylesheet" href="dist/all.css" />
+</head>
+<body>
+
+<header>
+<h1>Thermostat by Devon Blandin</h1>
+</header>
+
+<div id="wrapper">
+	<section>
+		<div id="thermostat">
+			<div id="screen">
+				<span id="time">9:35pm</span>
+				<span id="timerStart">Start Time: <span>9:35pm</span></span>
+				<span id="timerStop">Stop Time: <span>9:35pm</span></span>
+				<div id="temp">Inside<br /><span>70</span></div>
+				<div id="targetTemp">Set To<br /><span>(70)</span></div>
+				<span id="timerTemp">Set To<br /><span>68</span></span>
+				<span id="coolOn">Cool On</span>
+				<span id="heatOn">Heat On</span>
+				<span id="fanOn">Fan On</span>
+			</div>
+			<div id="controlsRight">
+				<span id="buttonUp">&uarr;</span>
+				<br /><br />
+				<span id="set">Set</span>
+				<span id="buttonHold">Hold</span>
+				<span id="buttonRun">Run</span>
+				<br /><br />
+				<span id="buttonDown">&darr;</span>
+			</div>
+			<div id="controlsBottom">
+				<div id="fanSelect">
+					Fan<br/><br/>
+					<input type="radio" id="auto" name="fanSelect" checked="checked" /><label for="auto">Auto</label>
+					<input type="radio" id="on" name="fanSelect" /><label for="on">On</label>
+				</div>
+				<div id="modeSelect">
+					System<br/><br/>
+					<input type="radio" id="cool" name="modeSelect" /><label for="cool">Cool</label>
+					<input type="radio" id="off" name="modeSelect" checked="checked" /><label for="off">Off</label>
+					<input type="radio" id="heat" name="modeSelect" /><label for="heat">Heat</label>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+</div>
+
+<footer>
+Devon Blandin
+</footer>
+
+</body>
+</html>
